@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bloggers Stop</h1>
+    </header>
+    <main>
+        <div id="posts" aria-live="polite">
+            
+        </div>
+
+        <div id="new-post">
+            <h2>Create a New Post</h2>
+            <input id="post-title" type="text" placeholder="Enter your post title" />
+            <textarea id="post-content" placeholder="Write your post content here..."></textarea>
+            <button onclick="addPost()">Add Post</button>
+        </div>
+
+        <button class="toggle-btn" onclick="toggleNewPost()">New Post</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bloggers Stop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
